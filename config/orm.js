@@ -1,5 +1,4 @@
 // import mysql connection
-const { query } = require("./connection");
 const connection = require("./connection");
 
 // helper function for sql syntax to add question marks in query
