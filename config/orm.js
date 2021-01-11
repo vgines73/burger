@@ -40,14 +40,8 @@ const orm = {
 
         });
     },
-    insertOne(table, cols, vals, cb) {
-        let queryString = `INSERT INTO ${table}`;
-        queryString += ' (';
-        queryString += cols.toString();
-        queryString += ') ';
-        queryString += 'VALUES (';
-        queryString += questionMarks(vals.length);
-        queryString += ') ';
+    insertOne(table, vals, cb) {
+        let queryString = `INSERT INTO ${table} (burger_name) VALUES (?)`;
 
         console.log(queryString);
 
