@@ -35,15 +35,21 @@ const orm = {
         const queryString = `SELECT * FROM ${tableInput};`;
         connection.query(queryString, (err, result) => {
             if (err) throw err;
-            console.log(result)
+            //console.log(result)
             cb(result);
 
         });
     },
-    insertOne(table, vals, cb) {
-        let queryString = `INSERT INTO ${table} (burger_name) VALUES (?)`;
+    insertOne(table, cols, vals, cb) {
+        let queryString = `INSERT INTO ${table}`;
+        queryString += ' (';
+        queryString += cols.toString();
+        queryString += ') ';
+        queryString += 'VALUES (';
+        queryString += questionMarks(vals.length);
+        queryString += ') ';
 
-        console.log(queryString);
+        //console.log(queryString);
 
         connnection.query(queryString, vals, (err, result) => {
             if (err) throw err;
@@ -57,7 +63,7 @@ const orm = {
         queryString += ' WHERE ';
         queryString += condition;
 
-        console.log(queryString);
+        //console.log(queryString);
         connection.query(querySting, (err, result) => {
             if (err) throw err;
             cb(result);
