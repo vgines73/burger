@@ -5,11 +5,11 @@ const burger = {
   selectAll(cb) {
     orm.selectAll('burgers', (res) => cb(res));
   },
-  insertOne(objColVals, cb) {
-    orm.insertOne('burgers', objColVals, cb, (res) => cb(res));
+  insertOne(cols, vals, cb) {
+    orm.insertOne('burgers', cols, vals, cb, (res) => cb(res));
   },
-  updateOne(table, column, devoured, id, cb) {
-    orm.updateOne('burgers', table, column, devoured, id, (res) => cb(res));
+  updateOne(objColVals, condition, cb) {
+    orm.updateOne('burgers', objColVals, condition, (res) => cb(res));
   },
 };
 

@@ -23,7 +23,7 @@ const objToSql = (ob) => {
     let value = ob[key];
 
     if (Object.hasOwnProperty.call(ob, key)) {
-      if (typeof value === 'string' && value.indexOf('  ') >= 0) {
+      if (typeof value === 'string' && value.indexOf(' ') >= 0) {
         value = `'${value}'`;
       }
 
@@ -45,13 +45,13 @@ const orm = {
   insertOne(table, cols, vals, cb) {
     let queryString = `INSERT INTO ${table}`;
     queryString += ' (';
-    queryString += cols;
+    queryString += cols.toString();
     queryString += ') ';
     queryString += 'VALUES (';
     queryString += questionMarks(vals.length);
     queryString += ') ';
 
-    // console.log(queryString);
+    console.log(queryString);
 
     // eslint-disable-next-line no-undef
     connection.query(queryString, vals, (err, result) => {
