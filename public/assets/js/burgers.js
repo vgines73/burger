@@ -13,8 +13,9 @@ document.addEventListener('DOMContentLoaded', (event) => {
       button.addEventListener('click', (e) => {
         // grabs id of the element 'id'
         const id = e.currentTarget.getAttribute('data-id');
-        const burgerDevoured = e.currentTarget.getAttribute('data-devoured');
+        const burgerDevoured = e.currentTarget.getAttribute('data-burgerDevoured');
         console.log(id);
+        console.log(burgerDevoured);
         const eatenBurger = {
           devoured: burgerDevoured,
         };
