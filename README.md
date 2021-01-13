@@ -65,7 +65,7 @@ First, go to my Github Profile and clone my burger repository onto your computer
 Click on the Link to see my live demo: https://drive.google.com/file/d/16hWc5uCE-DnnUSr-K6Su75oHQNudgnR0/view
 
 ## Challenges: 
-This started off just fine. I was able to get majority of it on. However, once I got into the button functionality, I hit so many roadblocks. So my MySQL syntax issues, but was able to figure it out in the end. However, my main one was deploying the application to Heroku.  I only deployed to heroku once, and had problems with it and still had issues so wasn't able to turn in my deployment. I will turn it in once I am able to get some help tomorrow to deploy it.
+This started off just fine. I was able to get majority of it on. However, once I got into the button functionality, I hit so many roadblocks. So my MySQL syntax issues, but was able to figure it out in the end. However, my main one was deploying the application to Heroku.  I only deployed to heroku once, and had problems with it and still had issues so wasn't able to turn in my deployment. I will turn it in once I am able to get some help tomorrow to deploy it. 
 
 ---
 ## Questions:
@@ -73,6 +73,8 @@ This started off just fine. I was able to get majority of it on. However, once I
 Link to my Github profile: https://github.com/vgines73
 
 Link to my burger app: https://github.com/vgines73/burger
+
+Link to heroku: https://infinite-bastion-62702.herokuapp.com/
 
 You can reach me by email at: vgines73@gmail.com
 
