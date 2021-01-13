@@ -43,10 +43,10 @@ document.addEventListener('DOMContentLoaded', (event) => {
   // create
   const createBurgerBtn = document.getElementById('create-form');
   if (createBurgerBtn) {
-    console.log('my burger button:', createBurgerBtn);
+    // console.log('my burger button:', createBurgerBtn);
     // eslint-disable-next-line no-shadow
     createBurgerBtn.addEventListener('submit', (event) => {
-      console.log('You clicked on the button!', event); // not working
+      // console.log('You clicked on the button!', event); // not working
       event.preventDefault();
 
       // Grabs value
