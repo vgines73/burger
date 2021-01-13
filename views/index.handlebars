@@ -15,7 +15,7 @@
                 {{#unless devoured}}
                 <ul>
                     {{burger_name}} <br>
-                    <button class="btn btn-success">devour</button>
+                    <button class="devour-button btn btn-success" data-id={{this.id}}>devour</button>
                 </ul>
 
                 {{/unless}}
@@ -27,7 +27,10 @@
             <ul>
                 {{#each burgers}}
                 {{#if devoured}}
-                {{burger_name}}
+                <ul>
+                {{burger_name}} <br>
+                <button class="delete-burger btn btn-success" data-id="{{this.id}}"></button>
+                </ul>
 
                 {{/if}}
                 {{/each}}
